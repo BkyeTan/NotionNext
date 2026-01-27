@@ -16,7 +16,7 @@ module.exports = {
   POST_SHARE_BAR_ENABLE: process.env.NEXT_PUBLIC_POST_SHARE_BAR || 'true', //文章底部分享条开关
   POSTS_SHARE_SERVICES:
     process.env.NEXT_PUBLIC_POST_SHARE_SERVICES ||
-    'link,wechat,qq,weibo,email', // 分享的服務，按顺序显示,逗号隔开
+    'link,wechat,qq,weibo,email,facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin,csdn,juejin', // 分享的服務，按顺序显示,逗号隔开
   // 所有支持的分享服务：link(复制链接),wechat(微信),qq,weibo(微博),email(邮件),facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin,vkshare,okshare,tumblr,livejournal,mailru,viber,workplace,pocket,instapaper,hatena
 
   POST_TITLE_ICON: process.env.NEXT_PUBLIC_POST_TITLE_ICON || true, // 是否显示标题icon
@@ -45,9 +45,4 @@ module.exports = {
   TAG_SORT_BY_COUNT: true, // 标签是否按照文章数量倒序排列，文章多的标签排在前。
   IS_TAG_COLOR_DISTINGUISHED:
     process.env.NEXT_PUBLIC_IS_TAG_COLOR_DISTINGUISHED === 'true' || true // 对于名称相同的tag是否区分tag的颜色
-
-  // ... 其他配置
-  // 文章排序依据，可选值：'date'（发布日期）, 'title'（标题）, 'slug', 'created_time'（创建时间）
-  POST_SORT_BY: process.env.NEXT_PUBLIC_POST_SORT_BY || 'date', 
-  // ...
 }
